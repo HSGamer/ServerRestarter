@@ -24,9 +24,9 @@ public class ForceRestartCommand extends Command {
             return false;
         }
         int seconds = 0;
-        if (args.length > 1) {
+        if (args.length > 0) {
             try {
-                seconds = Integer.parseInt(args[1]);
+                seconds = Integer.parseInt(args[0]);
                 if (seconds < 0) throw new NumberFormatException();
             } catch (NumberFormatException ex) {
                 MessageUtils.sendMessage(sender, getUsage());
