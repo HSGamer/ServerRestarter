@@ -9,6 +9,7 @@ import me.hsgamer.serverrestarter.command.SkipCommand;
 import me.hsgamer.serverrestarter.config.MainConfig;
 import me.hsgamer.serverrestarter.config.MessageConfig;
 import me.hsgamer.serverrestarter.manager.RestartManager;
+import me.hsgamer.serverrestarter.utils.BungeeUtils;
 
 public final class ServerRestarter extends BasePlugin {
     private final MainConfig mainConfig = new MainConfig(this);
@@ -20,10 +21,12 @@ public final class ServerRestarter extends BasePlugin {
         mainConfig.setup();
         messageConfig.setup();
         MessageUtils.setPrefix(MessageConfig.PREFIX::getValue);
+        BungeeUtils.setPlugin(this);
     }
 
     @Override
     public void enable() {
+        BungeeUtils.register();
         registerCommand(new ReloadCommand(this));
         registerCommand(new ForceRestartCommand(this));
         registerCommand(new SkipCommand(this));
@@ -38,6 +41,7 @@ public final class ServerRestarter extends BasePlugin {
     @Override
     public void disable() {
         restartManager.stopSchedule();
+        BungeeUtils.unregister();
     }
 
     public MainConfig getMainConfig() {

@@ -1,10 +1,7 @@
 package me.hsgamer.serverrestarter.builder;
 
 import me.hsgamer.hscore.builder.Builder;
-import me.hsgamer.serverrestarter.action.ChatAction;
-import me.hsgamer.serverrestarter.action.ConsoleAction;
-import me.hsgamer.serverrestarter.action.SoundAction;
-import me.hsgamer.serverrestarter.action.TitleAction;
+import me.hsgamer.serverrestarter.action.*;
 import me.hsgamer.serverrestarter.api.Action;
 
 import java.util.List;
@@ -19,6 +16,8 @@ public class ActionBuilder extends Builder<String, Action> {
         register(ChatAction::new, "chat");
         register(SoundAction::new, "sound");
         register(TitleAction::new, "title");
+        register(SendServerAction::new, "send-server", "send");
+        register(KickAllAction::new, "kick-all", "kick");
     }
 
     public Optional<Action> build(String string) {
