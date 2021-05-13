@@ -3,29 +3,29 @@ schedule-list:
 
 action-map:
   60:
-    - "chat: §7[§eServer§7] Restart in §c1 minute"
+    - "chat: &7[&eServer&7] Restart in &c1 minute"
   30:
-    - "chat: §7[§eServer§7] Restart in §c30 seconds"
-    - "title: §c-= §8[§eRestart§8] §c=- :: §730 seconds left :: 40 40 40"
+    - "chat: &7[&eServer&7] Restart in &c30 seconds"
+    - "title: &c-= &8[&eRestart&8] &c=- :: &730 seconds left :: 40 40 40"
   5:
-    - "chat: §7[§eServer§7] Restart in §c5 seconds"
-    - "title: §c-= §8[§eRestart§8] §c=- :: §75 seconds left :: 15 40 1"
+    - "chat: &7[&eServer&7] Restart in &c5 seconds"
+    - "title: &c-= &8[&eRestart&8] &c=- :: &75 seconds left :: 15 40 1"
     - "sound: UI_BUTTON_CLICK"
   4:
-    - "chat: §7[§eServer§7] Restart in §c4 seconds"
-    - "title: §c-= §8[§eRestart§8] §c=- :: §74 seconds left :: 15 40 1"
+    - "chat: &7[&eServer&7] Restart in &c4 seconds"
+    - "title: &c-= &8[&eRestart&8] &c=- :: &74 seconds left :: 15 40 1"
     - "sound: UI_BUTTON_CLICK"
   3:
-    - "chat: §7[§eServer§7] Restart in §c3 seconds"
-    - "title: §c-= §8[§eRestart§8] §c=- :: §73 seconds left :: 15 40 1"
+    - "chat: &7[&eServer&7] Restart in &c3 seconds"
+    - "title: &c-= &8[&eRestart&8] &c=- :: &73 seconds left :: 15 40 1"
     - "sound: UI_BUTTON_CLICK"
   2:
-    - "chat: §7[§eServer§7] Restart in §c2 seconds"
-    - "title: §c-= §8[§eRestart§8] §c=- :: §72 seconds left :: 15 40 1"
+    - "chat: &7[&eServer&7] Restart in &c2 seconds"
+    - "title: &c-= &8[&eRestart&8] &c=- :: &72 seconds left :: 15 40 1"
     - "sound: UI_BUTTON_CLICK"
   1:
-    - "chat: §7[§eServer§7] Restart in §c1 second"
-    - "title: §c-= §8[§eRestart§8] §c=- :: §71 second left :: 15 40 1"
+    - "chat: &7[&eServer&7] Restart in &c1 second"
+    - "title: &c-= &8[&eRestart&8] &c=- :: &71 second left :: 15 40 1"
     - "sound: UI_BUTTON_CLICK"
   0:
-    - "restart"
+    - "stop"
