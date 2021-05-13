@@ -25,7 +25,7 @@ public class ActionBuilder extends Builder<String, Action> {
         String[] split = string.split(":", 2);
         String name = split[0];
         String value = split.length > 1 ? split[1] : "";
-        return build(name, value);
+        return build(name.trim(), value.trim());
     }
 
     public List<Action> build(List<String> strings) {
