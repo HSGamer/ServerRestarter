@@ -1,0 +1,5 @@
+name: ServerRestarter
+version: ${project.version}
+main: me.hsgamer.serverrestarter.ServerRestarter
+api-version: 1.16
+authors: [ HSGamer ]
