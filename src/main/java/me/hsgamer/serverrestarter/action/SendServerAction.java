@@ -12,7 +12,7 @@ public class SendServerAction extends Action {
 
     @Override
     public void execute() {
-        for (Player player : Bukkit.getOnlinePlayers())
+        for (Player player : Bukkit.getOnlinePlayers().toArray(new Player[0]))
             BungeeUtils.connect(player, data);
     }
 }

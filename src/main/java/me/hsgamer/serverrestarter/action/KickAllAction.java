@@ -13,7 +13,7 @@ public class KickAllAction extends Action {
     @Override
     public void execute() {
         String colored = MessageUtils.colorize(data);
-        for (Player player : Bukkit.getOnlinePlayers())
+        for (Player player : Bukkit.getOnlinePlayers().toArray(new Player[0]))
             player.kickPlayer(colored);
     }
 }
